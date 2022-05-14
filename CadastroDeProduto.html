@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--Bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title>Cadastro de Usuário</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a class="nav-link" href="#">Login</a>
+      <a class="nav-link" href="#">Categoria</a>
+      <a class="nav-link" href="#">Produto</a>
+      <a class="nav-link" href="#">Quantidade</a>
+      <a class="nav-link" href="#">Carrinho<i class="bi bi-cart-check"></i></a>
+    </nav>
+  </header>
+  <section>
+    <div class="container-lg" id="Title">
+      <h2 id="Title-content">Cadastro de Produto</h2>
+    </div>
+    <form class="form">
+      <div class="form-group row">
+        <label for="inputProduto" class="col-sm-2 col-form-label">Nome do produto</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputProduto">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="Categoria" class="col-sm-2 col-form-label">Selecione a Categoria</label>
+        <select name="select" id="Categoria">
+          <option value="valor1" selected>Categoria 1</option>
+          <option value="valor2">Categoria 2</option>
+          <option value="valor3">Categoria 3</option>
+        </select>
+      </div>
+      <div class="form-group row">
+        <label for="inputIngredientes" class="col-sm-2 col-form-label">Ingredientes</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputIngredientes">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputValidade" class="col-sm-2 col-form-label">Validade</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputValidade" placeholder="00/00/0000">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputQteDisponivel" class="col-sm-2 col-form-label">Quantidade disponível</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputQteDisponivel">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPreco" class="col-sm-2 col-form-label">Preço</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputPreco">
+        </div>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
